@@ -1,0 +1,17 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+
+@mixin AAA {
+  background-color: orangered;
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizental;
+    }
+}
