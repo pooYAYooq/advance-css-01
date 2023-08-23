@@ -6,6 +6,7 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   transition: transform 300ms;
+  
 
   &:hover {
     transform: scale(1.03) translateY(-1.5rem);
@@ -25,5 +26,6 @@
   }
 
   &__text {
+    padding-bottom: 1.5rem;
   }
 }
