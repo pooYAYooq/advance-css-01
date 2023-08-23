@@ -68,12 +68,12 @@
   &:hover {
     background-color: $color-primary;
     color: $color-white;
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    box-shadow: $default-box-shadow 0 1rem 2rem;
     transform: translateY(-0.2rem);
   }
 
   &:active {
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+    box-shadow: $default-box-shadow 0 0.5rem 1rem;
     transform: translateY(-0.1rem);
   }
 }
