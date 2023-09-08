@@ -6,12 +6,18 @@
   }
 }
 
-
 @mixin AAA {
   background-color: orangered;
-    float: left;
+  float: left;
 
-    &:not(:last-child) {
-      margin-right: $gutter-horizental;
-    }
+  &:not(:last-child) {
+    margin-right: $gutter-horizental;
+  }
+}
+
+@mixin Xcentre-Ycentre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
