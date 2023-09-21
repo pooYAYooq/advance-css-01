@@ -7,6 +7,16 @@
   box-shadow: $default-box-shadow 0 1.5rem 4rem;
   transition: transform 300ms;
 
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
+  // @include respond(tab-port) {
+  //   top: 0;
+  //   left: 0;
+  //   transform: scale(1.2);
+  // }
+
   &:hover {
     transform: scale(1.03) translateY(-1.5rem);
   }
@@ -22,6 +32,10 @@
     );
     -webkit-background-clip: text;
     color: transparent;
+
+    @include respond(tab-port) {
+      margin: 0;
+    }
   }
 
   &__text {
